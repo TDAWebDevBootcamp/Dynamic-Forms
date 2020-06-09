@@ -1,0 +1,37 @@
+<script>
+    let colByBackground = {
+      "White": ["Green", "Gold", "Black"],
+      "Green": ["White", "Gold", "Black"],
+      "Black": ["Green", "Gold", "White"],
+      "Gold": ["Green", "Black", "White"]
+    }
+  
+    function changeCol(value) {
+      if (value.length == 0) {
+        document.getElementById("backColour").innerHTML = "<option></option>";
+      } else {
+        let colOptions = "";
+        for (backgroundId in colByBackground[value]) {
+          colOptions += "<option>" + colByBackground[value][backgroundId] + "</option>";
+        }
+        document.getElementById("textColour").innerHTML = colOptions;
+      }
+    }
+  </script>
+  
+  <form>
+    <label for="backColour">Background Colour:</label>
+    <select name="backColour" id="backColour" onChange="changeCol(this.value)">
+      <option value="White">White</option>
+      <option value="Green">Green</option>
+      <option value="Black">Black</option>
+      <option value="Gold">Gold</option>
+    </select>
+  
+    <label for="textColour">Text Colour:</label>
+    <select id="textColour" name="textColour">
+      <option value="" disabled selected>Select</option>
+    </select>
+  
+  </form>
+  
