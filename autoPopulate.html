@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function autoPop(userAge){
+      switch (userAge){
+        case "11":
+          document.getElementById('yearGroup').value = "7";
+          break;
+        case "12":
+          document.getElementById('yearGroup').value = "8";
+          break;
+        case "13":
+          document.getElementById('yearGroup').value = "9";
+          break;
+        case "14":
+          document.getElementById('yearGroup').value = "10";
+          break;
+        case "15":
+        case "16":
+          document.getElementById('yearGroup').value = "11";
+          break;
+        default:
+          document.getElementById('yearGroup').value = "7";
+          break;
+      }
+    }
+  </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="login()">
+      Age<input type="text" name="age" id="age" oninput="autoPop(this.value)">
+      Year Group<input type="text" name="yearGroup" id="yearGroup">
+      <p id="text"></p>
+    </form>
+</body>
+</html>
