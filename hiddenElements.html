@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  window.onload = function() {
+        document.getElementById('ifYes').style.display = 'none';
+  }
+
+  function unhide() {
+         if (document.getElementById("yes").checked) {
+            document.getElementById("ifYes").style.display = "block";
+         } else {
+            document.getElementById("ifYes").style.display = "none";
+         }
+  }
+
+  </script>
+</head>
+<body>
+    <form name="myForm">
+      Yes<input type="radio" onchange="unhide();" name="yesno" id="yes"/>
+      No<input type="radio" onchange="unhide();" name="yesno" id="no"/>
+      <br>
+      <div id="ifYes">If yes, explain:
+          <input type="text" id="yes" name="yes"/>
+      </div>
+    </form>
+</body>
+</html>
