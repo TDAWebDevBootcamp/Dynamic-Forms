@@ -1,4 +1,4 @@
-# Week 3 Dynamic Forms
+# Dynamic Forms
 
 Starter and example code for dynamic forms
 
