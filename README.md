@@ -7,3 +7,5 @@ Starter and example code for dynamic forms
 1. autoPopulate.html - starter code for autopoulating form elements.
 1. autoFill.html - startercode for filling selection elements based on user selection.
 1. hiddenElements.html - starter code showing the hiding / unhiding of elements.
+
+Copyright (c) 2022 The Developer Academy Ltd
